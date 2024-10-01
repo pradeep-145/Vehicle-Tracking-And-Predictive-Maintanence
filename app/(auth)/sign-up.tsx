@@ -1,13 +1,14 @@
 import { View, Text, ScrollView,TextInput, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { router, Stack } from 'expo-router'
+import { Link } from 'expo-router'
 import { Image } from 'react-native'
 import { MaterialIcons } from '@expo/vector-icons'
 const signUp = () => {
     const [showPassWord, setShowPassWord] = React.useState(true)
     const [showConfirmPassWord, setShowConfirmPassWord] = React.useState(true)
     const handleSubmit=()=>{
-        router.replace('/(tabs)')
+        router.replace('/(auth)choose-vehicle')
     }
   return (
     <ScrollView >
@@ -23,9 +24,15 @@ const signUp = () => {
             <TouchableOpacity onPress={()=>setShowConfirmPassWord(!showConfirmPassWord)} className='absolute translate-y-[102px] translate-x-32'>
                 <MaterialIcons name={showConfirmPassWord ? 'visibility' : 'visibility-off'} size={24} color="black" />
             </TouchableOpacity>
-            <TouchableOpacity className='bg-blue-500 w-80 rounded-lg p-2 mt-5 items-center justify-center' onPress={()=>{handleSubmit()}}>
-                <Text className='text-white'>Sign Up</Text>
+            
+            <TouchableOpacity className='bg-blue-500 w-80 rounded-lg p-2 mt-5 items-center justify-center' onPress={handleSubmit}>
+                <Text className='text-white'>Sign Up</Text> 
             </TouchableOpacity>
+
+            <View className='items-end w-80'>
+            
+            <Link href={'/(auth)/sign-in'} className=' right-0'>Already have an account?</Link>
+            </View>
         </View>
     </ScrollView>
   )

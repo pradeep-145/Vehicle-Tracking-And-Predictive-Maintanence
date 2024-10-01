@@ -11,6 +11,7 @@ const _layout = () => {
         <Stack.Screen name="forgot-password" options={{headerShown:false}} />  
         <Stack.Screen name="create-password" options={{headerShown:false}} />
         <Stack.Screen name="otp-verification" options={{headerShown:false}} />
+        <Stack.Screen name="choose-vehicle" options={{headerShown:false}} />
     </Stack>
   )
 }
