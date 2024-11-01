@@ -6,7 +6,7 @@ import { router } from 'expo-router'
 
 const welcome = () => {
     const handleSkip=()=>{
-        router.replace('/sign-up');
+        router.replace('/(auth)/sign-up');
     }
 
   return (

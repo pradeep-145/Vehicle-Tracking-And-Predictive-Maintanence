@@ -17,13 +17,13 @@ const signIn = () => {
             
             <Link href={'/(auth)/forgot-password'} className=' right-0'>Forgot password?</Link>
             </View>
-            <Link href={'/(auth)choose-vehicle'}>
             <TouchableOpacity className='bg-blue-500 w-80 rounded-lg p-2 mt-5 items-center justify-center' onPress={()=>{
               
             }}>
+              <Link href={'/(auth)/choose-vehicle'}>
                 <Text className='text-white'>Sign In</Text>
-            </TouchableOpacity>
               </Link>
+            </TouchableOpacity>
     </View>
   )
 }

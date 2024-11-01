@@ -8,7 +8,7 @@ const signUp = () => {
     const [showPassWord, setShowPassWord] = React.useState(true)
     const [showConfirmPassWord, setShowConfirmPassWord] = React.useState(true)
     const handleSubmit=()=>{
-        router.replace('/(auth)choose-vehicle')
+        router.replace('/(auth)/choose-vehicle')
     }
   return (
     <ScrollView >
