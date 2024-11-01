@@ -23,7 +23,7 @@ const chooseVehicle = () => {
 
         return(
 
-      <TouchableOpacity key={vehicle.id} className='bg-blue-300 flex items-center justify-center rounded-xl h-20 w-full ' onPress={()=>}>
+      <TouchableOpacity key={vehicle.id} className='bg-blue-300 flex items-center justify-center rounded-xl h-20 w-full ' onPress={()=>{}}>
         <Text>{vehicle.name}</Text>
       </TouchableOpacity>
         )
